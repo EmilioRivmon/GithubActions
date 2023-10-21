@@ -1,0 +1,15 @@
+name: Mi Primer Job
+
+on: [push]
+
+jobs:
+  build:
+    name: Construir
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonar el repositorio
+      uses: actions/checkout@v2
+
+    - name: Ejecutar un comando
+      run: echo "Hola, GitHub Actions!"
